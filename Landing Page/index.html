@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p class="logo">Company Tech<p>
+                <a class="menu-toggle" id="menu-toggle" aria-label="Menu Button" aria-expanded="false">=</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Features">Features</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section id="Home" class="hero">
+            <h1>Home</h1>
+            <p>your solution to modern web design</p>
+            <a class="l-button" href="#Features">Learn More</a>
+        </section>
+        <section id=Features class="Features">
+            <h2>Features</h2>
+            <article class="feature">
+                <a class="icons"><i class="fa-solid fa-mobile"></i></a>
+                <h3>Responsive Design</h3>
+                <p>Modern Media Queries.</p>
+            </article>
+            <article class="feature" >
+                <a class="icons"><i class="fa-solid fa-camera"></i></a>
+                <h3>Modern Asthetics</h3>
+                <p>Nested CSS.</p>
+            </article>
+            <article class="feature">
+                <a class="icons"><i class="fa-solid fa-arrow-right"></i></a>
+                <h3>Easy Costamization</h3>
+                <p>@layer and container queries.</p>
+            </article>
+        </section>
+        <section id="About" class="about">
+            <h2>About Us</h2>
+            <p>we are an instructor and students passionate about semantic HTML authoring and modern CSS.</p>
+
+        </section>
+        <section id="Contact" class="contactus">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="name" id="name" name="name" placeholder="Name" required />
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required />
+                <label for="message">Message</label> 
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy;2024 TonyPro,All rights reserved</p>
+    </footer>
+    <script>
+        document
+            .getElementById('menu-toggle')
+            .addEventListener('click', function () {
+                document.getElementById('nav-links').classList.toggle
+                    ('active');
+                document.getElementById('menu-toggle').ariaExpanded =
+                    document.getElementById('menu-toggle').ariaExpanded ==
+                        "true" ? "false" : "true";
+
+            });
+    </script>
+</body>
+
+</html>
